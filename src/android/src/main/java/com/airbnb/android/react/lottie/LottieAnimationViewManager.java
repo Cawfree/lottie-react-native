@@ -47,6 +47,7 @@ class LottieAnimationViewManager extends SimpleViewManager<LottieAnimationView> 
   @Override public LottieAnimationView createViewInstance(ThemedReactContext context) {
     final LottieAnimationView view = new LottieAnimationView(context);
     view.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+    view.setImageAssetsFolder("images/"); 
     view.addAnimatorListener(new Animator.AnimatorListener() {
       @Override
       public void onAnimationStart(Animator animation) {}
